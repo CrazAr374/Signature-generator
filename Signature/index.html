@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Signature Writer</title>
+  <link rel="stylesheet" href="sign.css">
+</head>
+<body>
+  <div class="container">
+    <div class="signature-area">
+      <canvas id="signature-pad" width="500" height="300"></canvas>
+    </div>
+    <div class="controls">
+      <div class="pen-options">
+        <label for="pen-style">Pen Style:</label>
+        <select id="pen-style">
+          <option value="round">Round</option>
+          <option value="square">Square</option>
+          <option value="butt">Butt</option>
+        </select>
+        <label for="pen-color">Pen Color:</label>
+        <input type="color" id="pen-color" value="#000000">
+      </div>
+      <div class="buttons">
+        <button id="clear-btn">Clear</button>
+        <button id="download-png-btn">Download as PNG</button>
+        <button id="download-pdf-btn">Download as PDF</button>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.3.1/jspdf.umd.min.js"></script>
+  <script src="sign.js"></script>
+</body>
+</html>
